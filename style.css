@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+#container {
+  height: 100%;
+  width: 100%;
+  background-color: hsl(0, 0%, 8%);
+  color: hsl(0, 0%, 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#main-card {
+  height: 520px;
+  width: 350px;
+  background-color: hsl(0, 0%, 12%);
+  font-family: "Inter";
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  padding-block: 30px;
+}
+.avatar img {
+  display: inline-block;
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
+}
+button {
+  width: 300px;
+  height: 35px;
+  background-color: hsl(0, 0%, 20%);
+  color: hsl(0, 0%, 100%);
+
+  border: none;
+  border-radius: 5px;
+  padding-block: 10px;
+  margin-block: 10px;
+  cursor: pointer;
+}
+button:hover {
+  background: hsl(75, 94%, 57%);
+  color: black;
+}
+.name-box {
+  font-size: 14px;
+  margin-block: 10px;
+  line-height: 1.5;
+}
+.description {
+  font-size: 14px;
+  margin-block: 15px;
+}
+
+@media only screen and (min-width: 347px) and (max-width: 450px) {
+  /* Your element styles here */
+  #main-card {
+    width: 300px;
+  }
+  button {
+    width: 250px;
+  }
+}
